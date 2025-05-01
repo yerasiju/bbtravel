@@ -14,7 +14,7 @@ function Login() {
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-center mb-4">Welcome back</h2>
       <p className="text-center mb-6">
-        Don't have an account yet?{" "}
+        Don't have an account yet ?{" "}
         <Link to="/register" className="text-blue-500">
           Sign up for free
         </Link>
