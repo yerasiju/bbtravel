@@ -15,7 +15,7 @@ function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-4">
-          <Link to="/" className="text-gray-700 hover:text-blue-500">
+          <Link to="/bbtravel/" className="text-gray-700 hover:text-blue-500">
             Home
           </Link>
           <div className="relative">
