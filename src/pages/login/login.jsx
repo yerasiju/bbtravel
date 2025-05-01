@@ -7,7 +7,6 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Логика для отправки данных на сервер
   };
 
   return (

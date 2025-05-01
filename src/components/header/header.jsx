@@ -5,7 +5,6 @@ function Header() {
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Логотип */}
         <div className="flex items-center">
           <img
             src="/path-to-logo.png"
@@ -15,7 +14,6 @@ function Header() {
           <span className="text-xl font-bold">GoTrip</span>
         </div>
 
-        {/* Навигация */}
         <nav className="hidden md:flex space-x-4">
           <Link to="/" className="text-gray-700 hover:text-blue-500">
             Home
@@ -24,7 +22,7 @@ function Header() {
             <button className="text-gray-700 hover:text-blue-500">
               Categories
             </button>
-            {/* Выпадающий список */}
+
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg hidden">
               <Link
                 to="#"
@@ -57,7 +55,6 @@ function Header() {
           </Link>
         </nav>
 
-        {/* Правый блок */}
         <div className="hidden md:flex items-center space-x-4">
           <div className="relative">
             <button className="text-gray-700 hover:text-blue-500">USD</button>
@@ -81,7 +78,7 @@ function Header() {
             <button className="text-gray-700 hover:text-blue-500">
               United States
             </button>
-            {/* Выпадающий список стран */}
+
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg hidden">
               <Link
                 to="#"

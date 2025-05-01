@@ -11,7 +11,6 @@ function Register() {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    // Логика для отправки данных на сервер
   };
 
   return (
