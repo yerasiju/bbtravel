@@ -14,22 +14,22 @@ function Register() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-center mb-4">Welcome back</h2>
-      <p className="text-center mb-6">
-        Already have an account yet?{" "}
-        <Link to="/login" className="text-blue-500">
+    <div className="max-w-md mx-auto mt-10 p-8 bg-white rounded-lg shadow-lg">
+      <h2 className="text-3xl font-bold text-center mb-6">Create Account</h2>
+      <p className="text-center mb-8 text-gray-600">
+        Already have an account?{" "}
+        <Link to="/login" className="text-blue-600 hover:underline">
           Log in
         </Link>
       </p>
-      <form onSubmit={handleRegister} className="space-y-4">
+      <form onSubmit={handleRegister} className="space-y-6">
         <input
           type="text"
           placeholder="First Name"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
           required
-          className="w-full p-3 border border-gray-300 rounded"
+          className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="text"
@@ -37,7 +37,7 @@ function Register() {
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           required
-          className="w-full p-3 border border-gray-300 rounded"
+          className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="email"
@@ -45,7 +45,7 @@ function Register() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full p-3 border border-gray-300 rounded"
+          className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="password"
@@ -53,7 +53,7 @@ function Register() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="w-full p-3 border border-gray-300 rounded"
+          className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="password"
@@ -61,9 +61,9 @@ function Register() {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
-          className="w-full p-3 border border-gray-300 rounded"
+          className="w-full p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <label className="flex items-center">
+        <label className="flex items-center text-gray-600">
           <input
             type="checkbox"
             checked={promotions}
@@ -75,29 +75,29 @@ function Register() {
         </label>
         <button
           type="submit"
-          className="w-full py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+          className="w-full py-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
         >
           Sign Up
         </button>
       </form>
-      <div className="text-center mt-6">
-        <p>or sign in with</p>
+      <div className="text-center mt-8">
+        <p className="text-gray-600">or sign up with</p>
         <div className="flex justify-center space-x-4 mt-4">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded">
+          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
             Facebook
           </button>
-          <button className="px-4 py-2 bg-red-600 text-white rounded">
+          <button className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300">
             Google
           </button>
         </div>
       </div>
-      <p className="text-center mt-6 text-sm">
+      <p className="text-center mt-8 text-sm text-gray-600">
         By creating an account, you agree to our{" "}
-        <Link to="/terms" className="text-blue-500">
+        <Link to="/terms" className="text-blue-600 hover:underline">
           Terms of Service
         </Link>{" "}
         and{" "}
-        <Link to="/privacy" className="text-blue-500">
+        <Link to="/privacy" className="text-blue-600 hover:underline">
           Privacy Statement
         </Link>
         .
