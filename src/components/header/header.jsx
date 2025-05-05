@@ -9,44 +9,60 @@ function Header() {
   };
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-[#051036] text-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <div className="flex items-center">
-          <img
-            src="/path-to-logo.png"
-            alt="Btravel logo"
-            className="h-8 w-8 mr-2"
-          />
+          <img src="/path-to-logo.png" alt="logo" className="h-8 w-8 mr-2" />
           <span className="text-xl font-bold">BTravel</span>
         </div>
 
         <div className="flex items-center space-x-4">
           <nav className="hidden md:flex space-x-4">
-            <Link to="/bbtravel/" className="text-gray-700 hover:text-blue-500">
+            <Link to="/bbtravel/" className="hover:text-blue-300">
               Home
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-300">
               Categories
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-300">
               Destinations
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-300">
               Blog
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-300">
               Pages
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-300">
               Dashboard
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-300">
               Contact
             </Link>
           </nav>
 
+          <div className="hidden md:flex items-center space-x-3">
+            <select className="bg-transparent text-white outline-none">
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+            <select className="bg-transparent text-white outline-none">
+              <option>United States</option>
+              <option>Russia</option>
+            </select>
+            <button className="border border-white px-4 py-1 rounded hover:bg-blue-700">
+              Become An Expert
+            </button>
+            <Link
+              to="/login"
+              className="border border-white px-4 py-1 rounded hover:bg-blue-700"
+            >
+              Sign In / Register
+            </Link>
+          </div>
+
           <button
-            className="md:hidden text-gray-700 hover:text-blue-500 focus:outline-none"
+            className="md:hidden hover:text-blue-300 focus:outline-none"
             onClick={toggleMobileMenu}
           >
             <svg
@@ -73,46 +89,37 @@ function Header() {
               )}
             </svg>
           </button>
-
-          <Link
-            to="/login"
-            className="hidden md:block px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-100"
-          >
-            Sign In / Register
-          </Link>
         </div>
       </div>
 
       {isMobileMenuOpen && (
-        <nav className="md:hidden bg-white shadow-md">
+        <nav className="md:hidden bg-[#051036] text-white shadow-md">
           <div className="px-6 py-4 space-y-2">
-            <Link
-              to="/bbtravel/"
-              className="block text-gray-700 hover:text-blue-500"
-            >
+            <Link to="/bbtravel/" className="block hover:text-blue-300">
               Home
             </Link>
-            <Link to="#" className="block text-gray-700 hover:text-blue-500">
+            <Link to="#" className="block hover:text-blue-300">
               Categories
             </Link>
-            <Link to="#" className="block text-gray-700 hover:text-blue-500">
+            <Link to="#" className="block hover:text-blue-300">
               Destinations
             </Link>
-            <Link to="#" className="block text-gray-700 hover:text-blue-500">
+            <Link to="#" className="block hover:text-blue-300">
               Blog
             </Link>
-            <Link to="#" className="block text-gray-700 hover:text-blue-500">
+            <Link to="#" className="block hover:text-blue-300">
               Pages
             </Link>
-            <Link to="#" className="block text-gray-700 hover:text-blue-500">
+            <Link to="#" className="block hover:text-blue-300">
               Dashboard
             </Link>
-            <Link to="#" className="block text-gray-700 hover:text-blue-500">
+            <Link to="#" className="block hover:text-blue-300">
               Contact
             </Link>
+
             <Link
               to="/login"
-              className="block px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-100"
+              className="block text-center border border-white px-4 py-2 rounded hover:bg-blue-700"
             >
               Sign In / Register
             </Link>
