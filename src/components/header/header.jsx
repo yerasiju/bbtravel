@@ -21,10 +21,10 @@ function Header() {
             <Link to="/bbtravel/" className="hover:text-blue-300">
               Home
             </Link>
-            <Link to="#" className="hover:text-blue-300">
-              Categories
+            <Link to="/bbtravel/hotels" className="hover:text-blue-300">
+              Hotels
             </Link>
-            <Link to="#" className="hover:text-blue-300">
+            <Link to="/bbtravel/destinations" className="hover:text-blue-300">
               Destinations
             </Link>
             <Link to="#" className="hover:text-blue-300">
@@ -50,9 +50,7 @@ function Header() {
               <option>United States</option>
               <option>Russia</option>
             </select>
-            <button className="border border-white px-4 py-1 rounded hover:bg-blue-700">
-              Become An Expert
-            </button>
+
             <Link
               to="/login"
               className="border border-white px-4 py-1 rounded hover:bg-blue-700"
@@ -98,10 +96,13 @@ function Header() {
             <Link to="/bbtravel/" className="block hover:text-blue-300">
               Home
             </Link>
-            <Link to="#" className="block hover:text-blue-300">
-              Categories
+            <Link to="/bbtravel/hotels" className="block hover:text-blue-300">
+              Hotels
             </Link>
-            <Link to="#" className="block hover:text-blue-300">
+            <Link
+              to="/bbtravel/destinations"
+              className="block hover:text-blue-300"
+            >
               Destinations
             </Link>
             <Link to="#" className="block hover:text-blue-300">
